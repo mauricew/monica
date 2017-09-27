@@ -6,26 +6,11 @@
  */
 
 require('./bootstrap');
+require('jquery-tags-input/dist/jquery.tagsinput.min');
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-//Vue.component('example', require('./components/people/dashboard/kids.vue'));
-
-const app = new Vue({
-    el: '#app',
-
-    data: {
-      activities_description_show: false,
-      reminders_frequency: 'once',
-      accept_invite_user: false,
-    },
-    methods: {
-    },
-});
+require('./tags');
+require('./search');
+require('./contacts');
 
 // jQuery-Tags-Input for the tags on the contact
 $(document).ready(function() {
